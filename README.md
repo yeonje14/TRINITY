@@ -1,7 +1,7 @@
 # 🛡️ TRINITY: The 3-Axis Multi-modal Deepfake Detective
 
-> **"화질이 낮으면 움직임(물리)을, 화질이 높으면 픽셀(디지털) 흔적을 본다."**  
-> **"Low quality? Check motion & consistency. High quality? Check visual artifacts."**  
+> **"화질이 낮으면 움직임(물리)을, 화질이 높으면 픽셀(디지털) 흔적을 본다."**  
+> **"Low quality? Check motion & consistency. High quality? Check visual artifacts."**  
 > **「低画質なら動きと一貫性、高画質なら視覚的アーティファクトを確認する。」**
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -16,15 +16,9 @@
 
 ---
 
-
-> ⚠️ **Research Prototype / Under Active Development**  
-> This repository is a research/engineering prototype. Results, thresholds, and performance metrics will be updated as experiments progress.
-
----
-
 ## 📂 Project Structure
 
-```
+```bash
 TRINITY/
 ├── 📂 interfaces/           # [KR] 사용자 인터페이스 어댑터 / [EN] User Interface Adapters / [JP] ユーザーインターフェース
 │   └── 📂 kakao/            # [KR] 카카오톡 챗봇 서비스 / [EN] KakaoTalk Chatbot Service / [JP] カカオトークチャットボット
@@ -67,9 +61,15 @@ TRINITY/
 │
 ├── 📂 weights/              # [KR] 학습된 모델 가중치 (.pth) / [EN] Pre-trained Model Weights / [JP] 学習済みモデルの重み
 ├── app.py                   # [KR] 메인 애플리케이션 진입점 / [EN] Main Application Entry Point / [JP] メインアプリケーションエントリーポイント
-└── requirements.txt         # [KR] Python 의존성 목록 / [EN] Python Dependencies / [JP] Python依存関係リスト ```
+└── requirements.txt         # [KR] Python 의존성 목록 / [EN] Python Dependencies / [JP] Python依存関係リスト
+---
+
+
+> ⚠️ **Research Prototype / Under Active Development**  
+> This repository is a research/engineering prototype. Results, thresholds, and performance metrics will be updated as experiments progress.
 
 ---
+
 <br>
 
 ## 🇰🇷 한국어 (Korean)
