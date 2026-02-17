@@ -19,6 +19,7 @@
 
 > ⚠️ **Research Prototype / Under Active Development**  
 > This repository is a research/engineering prototype. Results, thresholds, and performance metrics will be updated as experiments progress.
+
 ## 📂 Project Structure
 
 ```bash
@@ -64,7 +65,7 @@ TRINITY/
 │
 ├── 📂 weights/              # [KR] 학습된 모델 가중치 (.pth) / [EN] Pre-trained Model Weights / [JP] 学習済みモデルの重み
 ├── app.py                   # [KR] 메인 애플리케이션 진입점 / [EN] Main Application Entry Point / [JP] メインアプリケーションエントリーポイント
-└── requirements.txt         # [KR] Python 의존성 목록 / [EN] Python Dependencies / [JP] Python依存関係リスト
+└── requirements.txt         # [KR] Python 의존성 목록 / [EN] Python Dependencies / [JP] Python依存関係リスト```
 
 <br>
 
