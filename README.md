@@ -18,7 +18,7 @@
 
 ## 📂 Project Structure
 
-```bash
+
 TRINITY/
 ├── 📂 interfaces/           # [KR] 사용자 인터페이스 어댑터 / [EN] User Interface Adapters / [JP] ユーザーインターフェース
 │   └── 📂 kakao/            # [KR] 카카오톡 챗봇 서비스 / [EN] KakaoTalk Chatbot Service / [JP] カカオトークチャットボット
