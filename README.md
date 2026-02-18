@@ -1,4 +1,4 @@
-# 🛡️ TRINITY: The 3-Axis Multi-modal Deepfake Detective
+# 🛡️ TRINITY: The 3-Axis Multi-modal AI Video Detective
 
 > **"화질이 낮으면 움직임(물리)을, 화질이 높으면 픽셀(디지털) 흔적을 본다."**  
 > **"Low quality? Check motion & consistency. High quality? Check visual artifacts."**  
