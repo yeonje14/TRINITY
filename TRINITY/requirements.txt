@@ -1,0 +1,13 @@
+torch
+torchvision
+torchaudio
+flask
+celery[redis]
+redis
+opencv-python
+mediapipe
+yt-dlp
+numpy
+requests
+pydantic
+ffmpeg-python
