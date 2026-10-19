@@ -32,6 +32,8 @@ def test_image_end_to_end(client):
     prov = next(a for a in body["axes"] if a["axis"] == "provenance")
     assert prov["status"] == "no_evidence" and prov["weight"] == 0
     assert client.get("/history").json()[0]["id"] == body["id"]
+    assert client.get(f"/analyses/{body['id']}").json()["score"] == body["score"]
+    assert client.get("/analyses/nope").status_code == 404
 
 
 def test_generated_riskier_than_natural(client):

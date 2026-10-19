@@ -3,6 +3,7 @@
 - POST /analyze/url    유튜브 링크 → job_id (비동기, 폴링으로 진행률·결과 조회)
 - POST /analyze/image  이미지 업로드 → 결과 (동기 — 처리 시간이 짧음)
 - GET  /jobs/{job_id}
+- GET  /analyses/{analysis_id}
 - GET  /history
 - GET  /channels/{channel_id}
 """
@@ -73,6 +74,14 @@ def get_job(job_id: str, request: Request) -> JobOut:
     if job is None:
         raise HTTPException(404, "작업을 찾을 수 없습니다")
     return job
+
+
+@router.get("/analyses/{analysis_id}", response_model=AnalysisResult)
+def get_analysis(analysis_id: str, request: Request) -> AnalysisResult:
+    result = _store(request).get_analysis(analysis_id)
+    if result is None:
+        raise HTTPException(404, "분석 결과를 찾을 수 없습니다")
+    return result
 
 
 @router.get("/history", response_model=list[HistoryItem])
