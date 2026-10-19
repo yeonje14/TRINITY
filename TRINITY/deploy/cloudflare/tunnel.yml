@@ -1,2 +1,17 @@
-# TRINITY Module: tunnel.yml
-# TODO: Implement this module
+# Cloudflare Tunnel 설정 — 데모 시 맥북 엣지 서버를 외부에 노출
+#
+#   cloudflared tunnel login
+#   cloudflared tunnel create trinity
+#   cloudflared tunnel route dns trinity <your-hostname>
+#   cloudflared tunnel --config deploy/cloudflare/tunnel.yml run trinity
+#
+# <TUNNEL_ID>, <your-hostname>은 위 명령 결과로 채운다.
+tunnel: trinity
+credentials-file: ~/.cloudflared/<TUNNEL_ID>.json
+
+ingress:
+  - hostname: <your-hostname>
+    service: http://localhost:8000
+    originRequest:
+      connectTimeout: 30s
+  - service: http_status:404

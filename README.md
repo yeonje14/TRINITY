@@ -42,6 +42,8 @@ TRINITY/
 ├── 📂 training/
 │   └── hygiene.py                # 데이터 위생 — 압축 정렬·워터마크 탈상관·의미 감산·도메인 정렬
 │
+├── 📂 tests/                     # 합성 데이터 기반 방향성 검증 (pytest)
+├── 📂 deploy/cloudflare/         # Cloudflare Tunnel 설정
 ├── 📂 docs/literature-review/    # 선행연구 검토 보고서 (검증판)
 ├── 📂 weights/                   # 모델 가중치
 ├── app.py                        # FastAPI 진입점

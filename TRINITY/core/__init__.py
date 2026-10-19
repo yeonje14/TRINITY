@@ -1,2 +1,1 @@
-# TRINITY Module: __init__.py
-# TODO: Implement this module
+"""TRINITY 3축 탐지 엔진."""

@@ -1,13 +1,18 @@
-torch
-torchvision
-torchaudio
-flask
-celery[redis]
-redis
-opencv-python
-mediapipe
-yt-dlp
-numpy
-requests
-pydantic
-ffmpeg-python
+# 서버 · 코어 (필수)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+pydantic>=2.5
+numpy>=1.26
+pillow>=10.0
+yt-dlp>=2024.8.6
+# 시스템 의존성: ffmpeg / ffprobe (brew install ffmpeg)
+
+# 테스트
+pytest>=8.0
+httpx>=0.27
+
+# 선택 — 설치 시 자동 활성
+# torch>=2.2            # 축1-B 하이브리드 어텐션
+# transformers>=4.40    # 축3 비전 인코더 (CLIP)
+# c2pa-python>=0.6      # 축2 C2PA 서명 검증 (없으면 컨테이너 스캔 폴백)

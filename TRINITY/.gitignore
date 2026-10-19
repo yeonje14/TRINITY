@@ -1,6 +1,10 @@
 __pycache__/
 *.pyc
 venv/
+.venv/
 .env
 .DS_Store
-weights/*.pth
+.pytest_cache/
+weights/*
+!weights/.gitkeep
+*.db
